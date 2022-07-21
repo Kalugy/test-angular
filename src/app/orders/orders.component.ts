@@ -35,7 +35,7 @@ export class OrdersComponent implements OnInit {
   currencyFilters: string[] = ['USD','EUR'];
 
   selectedTypeFilter: string='';
-  typeFilters: string[] = ['order','proporsal'];
+  typeFilters: string[] = ['order','proposal'];
 
   constructor(
     private route: ActivatedRoute,
