@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Tab Name</h1>
+<div mat-dialog-content>
+  <p>Name of the new tab?</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Tab Name</mat-label>
+    <input matInput [(ngModel)]="data.newTabName">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+  <button mat-button [mat-dialog-close]="data.newTabName" cdkFocusInitial>Save Tab</button>
+</div>
